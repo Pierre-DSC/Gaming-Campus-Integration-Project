@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  list-style: none;
+}
+
+button{
+  background: none;
+  outline: none;
+  border: 1px solid whitesmoke;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+button:hover{
+  color: black;
+  background: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  text-align: center;
+  margin: 0 auto;
+}
+nav{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 20px 0px; 
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+}
+nav li:first-child{
+  color: rgb(95, 4, 170);
+}
+nav li:first-child:before{
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background: rgb(95, 4, 170);
+  transform: translateY(-20px);
+}
+nav li:hover:before{
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background: rgb(95, 4, 170);
+  transform: translateY(-20px);
+}
+nav li:last-child:before{
+  background: transparent;
+}
+#language{
+  background: rgba(138, 135, 135, 0.349);
+  border-radius: 25px;
+  padding: 10px;
+}
+.main-header{
+  background: url(./assets/img/bg.jpg) fixed center/cover;
+  padding: 60px;
+
+}
+header h1{
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin: 30px 0 35px;
+}
+header button{
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.header-text{
+  display: flex;
+  align-items: center;text-align: center;
+  padding: 60px;
+}
+.header-text p{
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.icon-part{
+  background: #181818;
+  color: whitesmoke;
+  padding: 65px 0;
+}
+.icon-part-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.list-icon-part h3 {
+  text-transform: uppercase;
+  margin: 30px 0 10px;
+}
+.list-icon-part button{
+  margin: 30px 0;
+  padding: 10px 25px;
+}
+.news-part{
+  padding: 80px 0 45px;
+  background: rgba(255, 255, 255, 0.747);
+}
+.header-news{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.left-part{
+  line-height: 30px;
+}
+.left-part h2{
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.left-part p{
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.right-part button{
+  color: rgba(0, 0, 0, 0.897);
+  border-color: black;
+  padding: 10px 20px;
+}
+.right-part button:hover{
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.897);
+}
+.main-news{
+}
+.main-news-container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+.main-news-container > div{
+  position: relative;
+  max-width: 23%;
+}
+.mn-pic img{
+  object-fit: cover;
+  width: 100%;
+}
+.main-news-container h4{
+  text-align: left;
+  max-width: 80%;
+}
+.main-news-container p{
+  text-align: left;
+}
+.main-news-container link{
+  align-items: left;
+}
